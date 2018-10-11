@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab2</string>
+    <string name="student_id">Student ID</string>
+    <string name="message">Message</string>
+    <string name="insert_student_number">Insert Student Number</string>
+    <string name="input_a_secret_message">Input a secret message</string>
+    <string name="todo">TODO</string>
+</resources>
