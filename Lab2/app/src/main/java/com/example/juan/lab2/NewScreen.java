@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
+import android.widget.TextView;
 
 
 public class NewScreen extends AppCompatActivity {
@@ -14,6 +15,12 @@ public class NewScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_screen);
+
+        Intent intent = getIntent();
+
+        String message = intent.getStringExtra("EXTRA_MESSAGE");
+        TextView textView = findViewById(R.id.textView4);
+        textView.setText(message);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("New Screen");

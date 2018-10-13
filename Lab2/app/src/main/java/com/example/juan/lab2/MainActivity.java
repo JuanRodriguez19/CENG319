@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,5 +39,13 @@ public class MainActivity extends AppCompatActivity {
     public void sendMessage (View view) {
         Intent intent = new Intent (MainActivity.this, NewScreen.class);
         startActivity(intent);
+
+        EditText editText = findViewById(R.id.editText);
+        String message = editText.getText().toString();
+
+        intent.putExtra("EXTRA_MESSAGE",message);
+        startActivity(intent);
     }
+
+
 }

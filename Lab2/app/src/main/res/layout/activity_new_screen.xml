@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewScreen">
+    tools:context=".NewScreen"
+    tools:layout_editor_absoluteY="25dp">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="207dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="133dp"
+        android:layout_marginBottom="37dp"
         android:layout_marginStart="51dp"
         android:layout_marginTop="104dp"
-        android:text="Your Message is:"
+        android:text="@string/your_message_is"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,10 +24,22 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="247dp"
-        android:layout_marginStart="117dp"
+        android:layout_marginBottom="199dp"
+        android:layout_marginStart="121dp"
         android:text="Return"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="121dp"
+        android:layout_marginStart="37dp"
+        android:text="@string/secret_mesage_displayed_here"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle.Inverse"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 </android.support.constraint.ConstraintLayout>

@@ -5,5 +5,11 @@
     <string name="insert_student_number">Insert Student Number</string>
     <string name="input_a_secret_message">Input a secret message</string>
     <string name="todo">TODO</string>
+    <string name="quit">Quit</string>
+    <string name="secret_message_here">secret message here</string>
+    <string name="Goback">Return</string>
+    <string name="your_message_is">Your Message is:</string>
+    <string name="secret_mesage_displayed_here">Secret Mesage Displayed Here</string>
+
 
 </resources>
