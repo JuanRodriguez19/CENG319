@@ -41,9 +41,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
         EditText editText = findViewById(R.id.editText);
+        EditText editText2 = findViewById(R.id.editText2);
+
         String message = editText.getText().toString();
+        String message2 = editText2.getText().toString();
 
         intent.putExtra("EXTRA_MESSAGE",message);
+        intent.putExtra("EXTRA_MESSAGE_2",message2);
         startActivity(intent);
     }
 

@@ -19,8 +19,12 @@ public class NewScreen extends AppCompatActivity {
         Intent intent = getIntent();
 
         String message = intent.getStringExtra("EXTRA_MESSAGE");
+        String message2 = intent.getStringExtra("EXTRA_MESSAGE_2");
+
         TextView textView = findViewById(R.id.textView4);
+        TextView textView2 = findViewById(R.id.textView5);
         textView.setText(message);
+        textView2.setText(message2);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("New Screen");
